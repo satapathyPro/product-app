@@ -1,0 +1,4 @@
+<h2>Product List</h2>
+<div *ngFor="let product of products">
+  <app-product-card [product]="product" (viewDetails)="navigateToDetail(product.id)"></app-product-card>
+</div>
